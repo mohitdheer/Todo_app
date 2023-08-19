@@ -1,0 +1,70 @@
+{
+  "todo_list": [
+    {
+      "Todo": "todo list",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 1
+    },
+    {
+      "Todo": "add todo",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 2
+    },
+    {
+      "Todo": "buy car",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 3
+    },
+    {
+      "Todo": "build new projects",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 4
+    },
+    {
+      "Todo": "learn advance js",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 5
+    },
+    {
+      "Todo": "learn redux & toolkit",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 6
+    },
+    {
+      "Todo": "learn advance react js",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 7
+    },
+    {
+      "Todo": "learn exress",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 8
+    },
+    {
+      "Todo": "learn node",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 9
+    },
+    {
+      "Todo": "sfgdbf",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 10
+    },
+    {
+      "Todo": "xvb",
+      "date": "19/8/2023",
+      "status": "incomplete",
+      "id": 11
+    }
+  ]
+}
