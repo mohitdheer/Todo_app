@@ -48,6 +48,13 @@ const TodoPage = () => {
       item.id.toString().toLowerCase().includes(searchBox.toLocaleLowerCase())
     ) {
       return item;
+    } else if (
+      item.status
+        .toString()
+        .toLowerCase()
+        .includes(searchBox.toLocaleLowerCase())
+    ) {
+      return item;
     }
   });
 
