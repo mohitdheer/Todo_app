@@ -53,7 +53,7 @@ const TodoPage = () => {
         <div className="flex flex-col">
           <div className="-m-1.5 overflow-x-auto">
             <div className="p-1.5 min-w-full inline-block align-middle">
-              <div className="border rounded-lg divide-y divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+              <div className="border rounded-lg divide-y divide-gray-200 ">
                 <div className="py-3 px-4">
                   <div className="relative max-w-xs">
                     <label htmlFor="hs-table-search" className="sr-only">
@@ -64,7 +64,7 @@ const TodoPage = () => {
                       name="hs-table-search"
                       id="hs-table-search"
                       onChange={(e) => setSearchBox(e.target.value)}
-                      className="p-3 pl-10 block w-full border outline-none border-gray-200 rounded-md text-sm  dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                      className="p-3 pl-10 block w-full border outline-none border-gray-200 rounded-md text-sm  "
                       placeholder="Search for items"
                     />
                     <div className="absolute inset-y-0 left-0 flex items-center pointer-events-none pl-4">
@@ -83,7 +83,7 @@ const TodoPage = () => {
                 </div>
                 <div className="overflow-hidden">
                   <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                    <thead className="bg-gray-50 dark:bg-gray-700">
+                    <thead className="bg-gray-50 ">
                       <tr>
                         <th
                           scope="col"
@@ -136,10 +136,10 @@ const TodoPage = () => {
                         SearchData.map((item, index) => {
                           return (
                             <tr key={item.id}>
-                              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 ">
                                 {index + 1}
                               </td>
-                              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
+                              <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 ">
                                 {edit.editID === item.id && edit.editState ? (
                                   <input
                                     type="text"
@@ -153,10 +153,10 @@ const TodoPage = () => {
                                   item.Todo
                                 )}
                               </td>
-                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">
                                 {item.date}
                               </td>
-                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
+                              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">
                                 {item.status ? "Completed" : "Pending"}
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-left text-sm font-medium">
