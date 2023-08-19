@@ -13,7 +13,8 @@ const Header = () => {
   const [todoValue, setTodoValue] = useState({
     Todo: "",
     date,
-    status: false,
+    status: "pending",
+    statusMode: false,
   });
 
   const addTodo = (e) => {
@@ -28,7 +29,8 @@ const Header = () => {
         setTodoValue({
           Todo: "",
           date,
-          status: false,
+          status: "pending",
+          statusMode: false,
         });
         getTodoDatafn();
       });

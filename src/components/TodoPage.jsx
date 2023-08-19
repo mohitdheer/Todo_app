@@ -44,6 +44,10 @@ const TodoPage = () => {
       item.Todo.toString().toLowerCase().includes(searchBox.toLocaleLowerCase())
     ) {
       return item;
+    } else if (
+      item.id.toString().toLowerCase().includes(searchBox.toLocaleLowerCase())
+    ) {
+      return item;
     }
   });
 
@@ -157,19 +161,20 @@ const TodoPage = () => {
                                 {item.date}
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 ">
-                                {item.status ? "Completed" : "Pending"}
+                                {item.status}
                               </td>
                               <td className="px-6 py-4 whitespace-nowrap text-left text-sm font-medium">
                                 <input
                                   type="checkbox"
                                   name="check"
                                   id="check"
-                                  defaultChecked={item.status}
-                                  disabled={item.status}
+                                  defaultChecked={item.statusMode}
+                                  disabled={item.statusMode}
                                   onClick={(e) => {
                                     const update = axios
                                       .patch(Todo_URL + "/" + item.id, {
-                                        status: true,
+                                        status: "Completed",
+                                        statusMode: true,
                                       })
                                       .then(() => {
                                         getTodoDatafn();
@@ -214,7 +219,7 @@ const TodoPage = () => {
                                           editState: true,
                                         }));
                                       }}
-                                      disabled={item.status}
+                                      disabled={item.statusMode}
                                       className="px-5 text-lg font-medium py-1 text-white bg-blue-500 hover:bg-blue-600 transition-all duration-300  rounded-lg"
                                     >
                                       Edit
